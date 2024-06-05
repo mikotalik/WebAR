@@ -27,5 +27,4 @@ function setModel(modelViewerElement, model) {
 }
 
 let viewer = addModelViewer(document.body)
-//setModel(viewer, "https://storage.googleapis.com/ahojtabi/models/tabi.glb")
-setModel(viewer, "https://ahojtabi.storage.googleapis.com/models/LPP_scene_Color.glb")
+setModel(viewer, "models/models_LPP_scene_Color.glb")
