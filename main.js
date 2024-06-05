@@ -10,6 +10,7 @@ function addModelViewer(element) {
 
 function setModel(modelViewerElement, model) {
 
+    modelViewerElement.setAttribute("crossorigin", "anonymous")
     modelViewerElement.setAttribute("src", model)
 
     modelViewerElement.setAttribute("autoplay", "true")
