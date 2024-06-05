@@ -5,6 +5,27 @@ function addModelViewer(element) {
 
     element.appendChild(modelViewer)
 
+    let button = document.createElement("button")
+    button.setAttribute("id", "button-ar")
+    button.setAttribute("class", "button-ar")
+
+    button.textContent = "AR"
+    button.style.display = "none"
+
+    document.body.appendChild(button)
+
+    button.onclick = function () { modelViewer.activateAR() }
+
+    modelViewer.addEventListener("model-visibility", (e) => {
+
+        if (e.detail.visible) {
+            button.style.display = ""
+        } else {
+            button.style.display = "none"
+        }
+
+    })
+
     return modelViewer
 }
 
