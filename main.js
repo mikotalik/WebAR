@@ -9,7 +9,7 @@ function addModelViewer(element) {
 }
 
 function setModel(modelViewerElement, model) {
-    
+
     modelViewerElement.setAttribute("src", model)
 
     modelViewerElement.setAttribute("autoplay", "true")
@@ -26,4 +26,4 @@ function setModel(modelViewerElement, model) {
 }
 
 let viewer = addModelViewer(document.body)
-setModel(viewer, "https://storage.googleapis.com/ahojtabi/models/LPP_scene_Color.glb")
+setModel(viewer, "https://storage.cloud.google.com/ahojtabi/models/LPP_scene_Color.glb?authuser=1")
