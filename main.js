@@ -10,7 +10,7 @@ function addModelViewer(element) {
 
 function setModel(modelViewerElement, model) {
 
-    modelViewerElement.setAttribute("crossorigin", "anonymous")
+    //modelViewerElement.setAttribute("crossorigin", "anonymous")
     modelViewerElement.setAttribute("src", model)
 
     modelViewerElement.setAttribute("autoplay", "true")
@@ -27,4 +27,5 @@ function setModel(modelViewerElement, model) {
 }
 
 let viewer = addModelViewer(document.body)
-setModel(viewer, "https://storage.googleapis.com/ahojtabi/models/LPP_scene_Color.glb")
+//setModel(viewer, "https://storage.googleapis.com/ahojtabi/models/tabi.glb")
+setModel(viewer, "https://ahojtabi.storage.googleapis.com/models/LPP_scene_Color.glb")
