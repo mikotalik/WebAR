@@ -45,6 +45,8 @@ function setModel(modelViewerElement, model) {
     modelViewerElement.setAttribute("auto-rotate", true)
     modelViewerElement.setAttribute("camera-controls", true)
 
+    modelViewerElement.setAttribute("scale", "0.1 0.1 0.1")
+
 }
 
 let viewer = addModelViewer(document.body)
