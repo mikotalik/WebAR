@@ -8,11 +8,8 @@
     margin: 0;
     padding: 0;
     border: 0 none;
-}
 
-body{
-    width:93.5vw;
-    height:100vh;
+    overflow-x: hidden;
 }
 
 .bar{
@@ -34,10 +31,10 @@ body{
 .button-ar{
     position: absolute;
 
-    width:20vw;
-    height:10vw;
+    width:14vw;
+    height:6vw;
 
-    left:40vw;
+    left:43vw;
     top:70vh;
 
     background-color: var(--toored);
@@ -53,6 +50,6 @@ body{
 model-viewer{
     position: absolute;
 
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 75px);
 }
