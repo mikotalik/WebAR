@@ -1,4 +1,7 @@
 
+const isMobile = (navigator.userAgent.match(/Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile/)) ? true : false
+
+
 function addModelViewer(element) {
 
     let modelViewer = document.createElement("model-viewer")
@@ -12,19 +15,21 @@ function addModelViewer(element) {
     button.textContent = "AR"
     button.style.display = "none"
 
-    document.body.appendChild(button)
+    if (isMobile) {
+        document.body.appendChild(button)
 
-    button.onclick = function () { modelViewer.activateAR() }
+        button.onclick = function () { modelViewer.activateAR() }
 
-    modelViewer.addEventListener("model-visibility", (e) => {
+        modelViewer.addEventListener("model-visibility", (e) => {
 
-        if (e.detail.visible) {
-            button.style.display = ""
-        } else {
-            button.style.display = "none"
-        }
+            if (e.detail.visible) {
+                button.style.display = ""
+            } else {
+                button.style.display = "none"
+            }
 
-    })
+        })
+    }
 
     return modelViewer
 }

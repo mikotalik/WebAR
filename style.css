@@ -31,10 +31,10 @@
 .button-ar{
     position: absolute;
 
-    width:14vw;
-    height:6vw;
+    width:20vw;
+    height:12vw;
 
-    left:43vw;
+    left:40vw;
     top:70vh;
 
     background-color: var(--toored);
@@ -42,6 +42,10 @@
     color: white;
 
     align-content: center;
+
+    font-size: 6vw;
+
+    border-radius: 16px;
 
     z-index: 1;
 }
